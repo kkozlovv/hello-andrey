@@ -5,3 +5,9 @@
 }
 
 /* colors */
+/* fonts */
+body {
+  font-family: Roboto;
+  background-color: #fff;
+  color: #fff;
+}
