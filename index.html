@@ -9,63 +9,125 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
-    <div class="container">
+    <div class="content">
+        <div class="container">
 
-        <header class="header">
-            <div class="header__title">
-                <h1 class="h1">Список застрахованных</h1>
-            </div>
-            <div class="header__links">
-                <a class="header__link" href="#"><i>icon</i>Импорт ИК</a>
-                <a class="header__link" href="#"><i>icon</i>Добавить бумажную ИК</a>
-                <a class="header__link" href="#"><i>icon</i>Добавить старховой полис</a>
-                <a class="header__link" href="#"><i>icon</i>Скачать отчёт</a>
-            </div>
-        </header>
-
-        <div class="content">
-            <div class="content-row">
-                <div class="sidebar">
-                    <div class="sidebar-item">Статус</div>
-                    <div class="sidebar-item">Период</div>
-                    <div class="sidebar-item">Страховые компании</div>
-                    <div class="sidebar-item">Регион</div>
+            <header class="header">
+                <div class="header__title">
+                    <h1 class="h1">Список застрахованных</h1>
                 </div>
-                
-                <main class="main">
-                    <div class="main-search">Поиск по ФИО / № ИК / № Полиса / Серии</div>
-                    <div class="cards-wrap">
-                        <div class="card">Сергеев Артем Андреевич</div>
-                        <div class="card">Сергеев Артем Андреевич</div>
-                        <div class="card">Сергеев Артем Андреевич</div>
-                        <div class="card">Сергеев Артем Андреевич</div>
-                    </div>
-                    <nav class="pagination">
-                        <ul class="pagination-items">
-                           <li class="pagination-item"><a href="#" class="pagination-link"><</a></li>
-                           <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
-                           <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
-                           <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
-                           <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
-                           <li class="pagination-item"><a href="#" class="pagination-link">...</a></li>
-                           <li class="pagination-item"><a href="#" class="pagination-link">13</a></li> 
-                           <li class="pagination-item"><a href="#" class="pagination-link">></a></li>
-                        </ul>
-                        <div class="pagination__">
-                            Показывать по 24
-                            <i></i>
-                        </div>
-                    </nav>
-                </main>
+                <div class="header__links">
+                    <a class="header__link" href="#"><i class="fa-solid fa-file-arrow-down"></i>Импорт ИК</a>
+                    <a class="header__link" href="#"><i class="fa-solid fa-file-arrow-down"></i>Добавить бумажную ИК</a>
+                    <a class="header__link" href="#"><i class="fa-solid fa-file-arrow-down"></i>Добавить старховой полис</a>
+                    <a class="header__link" href="#"><i class="fa-solid fa-file-arrow-down"></i>Скачать отчёт</a>
+                </div>
+            </header>
     
-            </div>
-        </div>
+            <div class="content">
+                <div class="content-row">
+                    <div class="sidebar">
+                        <div class="sidebar-item">Статус</div>
+                        <div class="sidebar-item">Период</div>
+                        <div class="sidebar-item">Страховые компании</div>
+                        <div class="sidebar-item">Регион</div>
+                    </div>
+                    
+                    <main class="main">
+                        <div class="main-search">Поиск по ФИО / № ИК / № Полиса / Серии</div>
+                        <div class="cards-wrap">
+                            <div class="card">
+                                <div class="card-head">
+                                    <div class="card-head__persons">
+                                        <strong class="card-head__persons-name">Сергеев Артем Андреевич</strong>
+                                        <span class="card-head__persons-numder">74-459  0066241</span>
+                                    </div>
+                                    <div class="card-head__tags">
+                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Гарантийное письмо</div>
+                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Бумажная</div>
+                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Активная</div>
+                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Ожидает активации</div>
+                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Электронная</div>
+                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Полис</div>
 
+                                        <small>Дата создания: 11.03.22</small>
+
+                                    </div>
+                                </div>
+
+                                <hr class="card-hr">
+
+                                <div class="card-body">
+                                    <div class="card-body__info">
+                                        <div class="card-body__info-item">
+                                            <small>Дата рождения:</small>
+                                            <p>12.02.1998</p>
+                                        </div>
+                                        <div class="card-body__info-item">
+                                            <small>Страховая программа:</small>
+                                            <p>Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА</p>
+                                        </div>
+                                        <div class="card-body__info-item">
+                                            <small>Период действия ИК:</small>
+                                            <p>15.05.2022 - 15.05.2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body__buttons">
+                                        <button class="button button_base" type="button" onclick="window.open('file.doc')">
+                                            <i class="fa-solid fa-arrow-down-to-bracket"></i>
+                                            Скачать
+                                        </button>
+                                        <button class="button button_base" type="button">
+                                            Перейти
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <nav class="pagination">
+                            <ul class="pagination-items">
+                                <li class="pagination-item">
+                                    <span class="pagination-link"><i class="fa-solid fa-arrow-left"></i></span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link">1</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link">2</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link">3</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link">4</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link">...</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link">13</span>
+                                </li>
+                                <li class="pagination-item">
+                                    <span class="pagination-link"><i class="fa-solid fa-arrow-right"></i></span>
+                                </li>                            
+                            </ul>
+                            <div class="pagination__">
+                                Показывать по 24
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </div>
+                        </nav>
+                    </main>
+        
+                </div>
+            </div>
+    
+        </div>
     </div>
 
 
 
-
+    <script src="https://kit.fontawesome.com/23c35b055d.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
