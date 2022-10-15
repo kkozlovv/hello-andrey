@@ -6,8 +6,98 @@
 
 /* colors */
 /* fonts */
+/* borders */
+/* grid-breakpoints */
+/* min screen */
+/* max screen */
 body {
   font-family: Roboto;
+  background-color: #F4F4F4;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0CAF89;
+}
+
+button {
+  color: #0CAF89;
+}
+
+.h1 {
+  font-size: 20px;
+  line-height: 21px;
+  color: #000;
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
   background-color: #fff;
-  color: #fff;
+  padding: 18px 16px;
+  margin: 16px 0;
+}
+
+.header__links {
+  display: flex;
+}
+
+.content-row {
+  display: grid;
+  grid-template-columns: 229px 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.sidebar {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 16px;
+}
+
+.main-search {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 24px;
+}
+
+.pagination-items {
+  list-style: none;
+  display: flex;
+}
+
+/* media  */
+@media (min-width: 767px) {
+  /* */
+}
+@media (min-width: 991px) {
+  /* */
+}
+@media (min-width: 1279px) {
+  /* */
+}
+@media (max-width: 767px) {
+  /* */
+}
+@media (max-width: 991px) {
+  /* */
+}
+@media (max-width: 1279px) {
+  /* */
 }
