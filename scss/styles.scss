@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* colors */
+$color-white: #fff;
+$color-black: #000;
+$color-base: #0CAF89;
+$color-secondary: #000;
+
+/* fonts */
+$font-family: Roboto;
+$font-family: Roboto;
+
+/* borders */
+$border-sm:  8px;
+$border-md: 16px;
+$border-lg: 30px;
+$border-xl: 50px;
+
+
+
+/* grid-breakpoints */ 
+
+/* min screen */
+$screen-sm:  576px;
+$screen-md:  768px;
+$screen-lg:  992px;
+$screen-xl: 1280px;
+/* max screen */
+$screen-sm-max:  767px;
+$screen-md-max:  991px;
+$screen-lg-max: 1279px;
+
+body {
+    font-family: Roboto;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $color-base;
+}
+
+button {
+    color: #0CAF89;
+}
+
+.h1 {
+    font-size: 20px;
+    line-height: 21px;
+    color: $color-black;
+    margin: 0;
+}
+
+
+
+.container {
+    width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: $border-md;
+    background-color: $color-white;
+    padding: 18px 16px;
+    margin: 16px 0;
+}
+
+.header__links {
+    display: flex;
+
+}
+
+.content-row {
+    display: grid;
+    grid-template-columns: 229px 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.sidebar {
+    background-color: $color-white;
+    border-radius: $border-md;
+    padding: 16px 16px;
+}
+.main-search {
+    background-color: $color-white;
+    border-radius: $border-md;
+    padding: 12px 16px;
+}
+.card {
+    background-color: $color-white;
+    border-radius: $border-md;
+    padding: 16px 24px;
+}
+
+.pagination-items {
+    list-style: none;
+    display: flex;
+}
+
+
+
+
+/* media  */
+@media (min-width: $screen-sm-max) {
+    /* */    
+}
+@media (min-width: $screen-md-max) {
+    /* */    
+}
+@media (min-width: $screen-lg-max) {
+    /* */    
+}
+
+@media (max-width: $screen-sm-max) {
+    /* */    
+}
+@media (max-width: $screen-md-max) {
+    /* */    
+}
+@media (max-width: $screen-lg-max) {
+    /* */    
+}
