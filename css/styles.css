@@ -21,6 +21,11 @@ a {
   color: #0CAF89;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .h1 {
   font-size: 20px;
   line-height: 21px;
@@ -44,8 +49,20 @@ a {
   margin: 16px 0;
 }
 
-.header__links {
+.header__title {
+  margin-right: auto;
+}
+
+.header__nav {
   display: flex;
+}
+
+.header__nav-link {
+  margin-left: 48px;
+}
+
+.header__nav-icon {
+  margin-right: 8px;
 }
 
 .content-row {
@@ -85,9 +102,27 @@ a {
 }
 
 .card-head__tags {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0 8px;
+  display: flex;
+}
+
+.card-head__tags-tag {
+  border-radius: 30px;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-align: center;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.card-head__tags-tag_immunocard {
+  background-color: #F6772D;
+}
+
+.card-date {
+  margin-left: auto;
 }
 
 .pagination-items {
