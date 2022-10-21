@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
+);
+
+
 /* colors */
 $color-white: #fff;
 $color-black: #000;
@@ -58,107 +75,74 @@ p {
     margin: 0;
 }
 
-
-
-.container {
-    width: 1280px;
-    margin-right: auto;
-    margin-left: auto;
+.page {
+    font-family: Roboto;
+    background-color: #F4F4F4;
+    margin: 16px 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-radius: $border-md;
     background-color: $color-white;
     padding: 18px 16px;
-    margin: 16px 0;
 }
 
-.header__title{
+.header-title {
     margin-right: auto;
 }
-
-.header__nav {
-    display: flex;
-}
-
-.header__nav-link {
-    margin-left: 48px;     
-}
-
-.header__nav-icon {
-    margin-right: 8px;
-}
-
-.content-row {
-    display: grid;
-    grid-template-columns: 229px 1fr;
-    gap: 16px 16px;
-}
-
-.sidebar {
+  
+.filter {
+    padding: 16px 16px;
     background-color: $color-white;
     border-radius: $border-md;
-    padding: 16px 16px;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px 0px;
+    padding: 0;
+    margin: 0;
 }
 
-.main-search {
+.top-bar {
     background-color: $color-white;
     border-radius: $border-md;
     padding: 12px 16px;
-}
-
-.cards-wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px 16px;
 }
 
 .card {
     background-color: $color-white;
     border-radius: $border-md;
     padding: 16px 24px;
-    
+    border: none;
 }
 
-.card-head__tags {
-    display: flex;
+.footer {
+    background-color: $color-white;
+    border-radius: $border-md;
+    padding: 14px 24px;
 }
 
-.card-head__tags-tag {
-    border-radius: $border-lg;
+.card-head__tags {}
+
+.card-head__tags-item {
     color: $color-white;
     padding: 2px 8px;
     font-size: 11px;
     letter-spacing: 0.4px;
     line-height: 16px;
-    text-align: center;
     margin-right: 8px;
-    font-weight: 500;
+    border-radius: $border-lg;
 }
 
-.card-head__tags-tag_immunocard {
-    background-color: $color-immunocard;
-}
-
-.card-date {
-    margin-left: auto;
+.card-head__tags-item_base {
+    background-color: $color-base;
 }
 
 
 
-.pagination-items {
-    list-style: none;
-    display: flex;
-}
+
 
 
 
