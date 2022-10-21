@@ -4,274 +4,391 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Andrey</title>
+    <title>застрахованные</title>
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
+
+    <div class="page">
+
         <div class="container">
 
-            <header class="header">
-                <div class="header__title">
-                    <h1 class="h1">Список застрахованных</h1>
-                </div>
-                <div class="header__nav">
-                    <a class="header__nav-link" href="#"><i class="header__nav-icon fa-solid fa-file-arrow-down"></i>Импорт ИК</a>
-                    <a class="header__nav-link" href="#"><i class="header__nav-icon fa-solid fa-file-arrow-down"></i>Добавить бумажную ИК</a>
-                    <a class="header__nav-link" href="#"><i class="header__nav-icon fa-solid fa-file-arrow-down"></i>Добавить старховой полис</a>
-                    <a class="header__nav-link" href="#"><i class="header__nav-icon fa-solid fa-file-arrow-down"></i>Скачать отчёт</a>
-                </div>
-            </header>
-    
-            <div class="content">
-                <div class="content-row">
-                    <div class="sidebar">
-                        <div class="sidebar-item">Статус</div>
-                        <div class="sidebar-item">Период</div>
-                        <div class="sidebar-item">Страховые компании</div>
-                        <div class="sidebar-item">Регион</div>
+            <div class="row">
+                <header class="header col-12 mb-3 d-flex justify-content-between">
+                    <div class="header-title">Список застрахованных</div>
+                    <div class="header-nav">
+                        <a href="#" class="header-nav__link">
+                            <i></i>
+                            Импорт ИК
+                        </a>
+                        <a href="#" class="header-nav__link">
+                            <i></i>
+                            Добавить бумажную ИК
+                        </a>
+                        <a href="#" class="header-nav__link">
+                            <i></i>
+                            Добавить старховой полис
+                        </a>
+                        <a href="#" class="header-nav__link">
+                            <i></i>
+                            Скачать отчёт
+                        </a>
                     </div>
-                    
-                    <main class="main">
-                        <div class="main-search">Поиск по ФИО / № ИК / № Полиса / Серии</div>
-                        <div class="cards-wrap">
-                            <div class="card">
-                                <div class="card-head">
-                                    <div class="card-head__persons">
-                                        <strong class="card-head__persons-name">Сергеев Артем Андреевич</strong>
-                                        <span class="card-head__persons-numder">74-459  0066241</span>
-                                    </div>
-                                    <div class="card-head__tags">
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Гарантийное письмо</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Бумажная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Активная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Ожидает активации</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Электронная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Полис</div>
+                </header>
+                <aside class="filter col-2">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
 
-                                        <p class="card-date">Дата создания: 11.03.22</p>
-
-                                    </div>
-                                </div>
-
-                                <hr class="card-hr">
-
-                                <div class="card-body">
-                                    <div class="card-body__info">
-                                        <div class="card-body__info-item">
-                                            <small>Дата рождения:</small>
-                                            <p>12.02.1998</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Страховая программа:</small>
-                                            <p>Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Период действия ИК:</small>
-                                            <p>15.05.2022 - 15.05.2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-body__buttons">
-                                        <button class="button button_base" type="button" onclick="window.open('file.doc')">
-                                            <i class="fa-solid fa-arrow-down-to-bracket"></i>
-                                            Скачать
-                                        </button>
-                                        <button class="button button_base" type="button">
-                                            Перейти
-                                        </button>
-                                    </div>
-                                </div>
-
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Статус
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
-                            <div class="card">
-                                <div class="card-head">
-                                    <div class="card-head__persons">
-                                        <strong class="card-head__persons-name">Сергеев Артем Андреевич</strong>
-                                        <span class="card-head__persons-numder">74-459  0066241</span>
-                                    </div>
-                                    <div class="card-head__tags">
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Гарантийное письмо</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Бумажная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Активная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Ожидает активации</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Электронная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Полис</div>
+                          </div>
+                        </div>
 
-                                        <p class="card-date">Дата создания: 11.03.22</p>
-
-                                    </div>
-                                </div>
-
-                                <hr class="card-hr">
-
-                                <div class="card-body">
-                                    <div class="card-body__info">
-                                        <div class="card-body__info-item">
-                                            <small>Дата рождения:</small>
-                                            <p>12.02.1998</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Страховая программа:</small>
-                                            <p>Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Период действия ИК:</small>
-                                            <p>15.05.2022 - 15.05.2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-body__buttons">
-                                        <button class="button button_base" type="button" onclick="window.open('file.doc')">
-                                            <i class="fa-solid fa-arrow-down-to-bracket"></i>
-                                            Скачать
-                                        </button>
-                                        <button class="button button_base" type="button">
-                                            Перейти
-                                        </button>
-                                    </div>
-                                </div>
-
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Период
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
-                            <div class="card">
-                                <div class="card-head">
-                                    <div class="card-head__persons">
-                                        <strong class="card-head__persons-name">Сергеев Артем Андреевич</strong>
-                                        <span class="card-head__persons-numder">74-459  0066241</span>
-                                    </div>
-                                    <div class="card-head__tags">
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Гарантийное письмо</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Бумажная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Активная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Ожидает активации</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Электронная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Полис</div>
+                          </div>
+                        </div>
 
-                                        <p class="card-date">Дата создания: 11.03.22</p>
-
-                                    </div>
-                                </div>
-
-                                <hr class="card-hr">
-
-                                <div class="card-body">
-                                    <div class="card-body__info">
-                                        <div class="card-body__info-item">
-                                            <small>Дата рождения:</small>
-                                            <p>12.02.1998</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Страховая программа:</small>
-                                            <p>Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Период действия ИК:</small>
-                                            <p>15.05.2022 - 15.05.2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-body__buttons">
-                                        <button class="button button_base" type="button" onclick="window.open('file.doc')">
-                                            <i class="fa-solid fa-arrow-down-to-bracket"></i>
-                                            Скачать
-                                        </button>
-                                        <button class="button button_base" type="button">
-                                            Перейти
-                                        </button>
-                                    </div>
-                                </div>
-
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Страховые компании
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
-                            <div class="card">
-                                <div class="card-head">
-                                    <div class="card-head__persons">
-                                        <strong class="card-head__persons-name">Сергеев Артем Андреевич</strong>
-                                        <span class="card-head__persons-numder">74-459  0066241</span>
-                                    </div>
-                                    <div class="card-head__tags">
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Гарантийное письмо</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Бумажная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Активная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Ожидает активации</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Электронная</div>
-                                        <div class="card-head__tags-tag card-head__tags-tag_immunocard">Полис</div>
+                          </div>
+                        </div>
 
-                                        <p class="card-date">Дата создания: 11.03.22</p>
-
-                                    </div>
-                                </div>
-
-                                <hr class="card-hr">
-
-                                <div class="card-body">
-                                    <div class="card-body__info">
-                                        <div class="card-body__info-item">
-                                            <small>Дата рождения:</small>
-                                            <p>12.02.1998</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Страховая программа:</small>
-                                            <p>Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА</p>
-                                        </div>
-                                        <div class="card-body__info-item">
-                                            <small>Период действия ИК:</small>
-                                            <p>15.05.2022 - 15.05.2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-body__buttons">
-                                        <button class="button button_base" type="button" onclick="window.open('file.doc')">
-                                            <i class="fa-solid fa-arrow-down-to-bracket"></i>
-                                            Скачать
-                                        </button>
-                                        <button class="button button_base" type="button">
-                                            Перейти
-                                        </button>
-                                    </div>
-                                </div>
-
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                Регион
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                              <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
                             </div>
                         </div>
-                        <nav class="pagination">
-                            <ul class="pagination-items">
-                                <li class="pagination-item">
-                                    <span class="pagination-link"><i class="fa-solid fa-arrow-left"></i></span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link">1</span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link">2</span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link">3</span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link">4</span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link">...</span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link">13</span>
-                                </li>
-                                <li class="pagination-item">
-                                    <span class="pagination-link"><i class="fa-solid fa-arrow-right"></i></span>
-                                </li>                            
-                            </ul>
-                            <div class="pagination__">
-                                Показывать по 24
-                                <i class="fa-solid fa-arrow-down"></i>
+
+                    </div>
+
+                      
+
+                </aside>
+                <div class="col-10">
+                    <div class="top-bar mb-3">
+                        <div class="search">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form> 
+                        </div>
+                        <div class="sorting">
+                            Кол-во ИК: <strong>56480</strong>
+                            Сначала новые
+                        </div>
+                    </div>
+                    <main class="main row">
+                        <div class="card col-12 mb-3">
+                            <div class="card-head row">
+                                <div class="col-9">
+                                    <div class="card-head__person">
+                                        <p class="card-head__person-name">
+                                            Сергеев Артем Андреевич
+                                        </p>
+                                        <p class="card-head__person-number">
+                                            74-459  0066241
+                                        </p>
+                                    </div>
+                                    <div class="card-head__tags d-flex">
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Гарантийное письмо
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Бумажная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Активная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Ожидает активации
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Электронная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Полис
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card-head__date text-end">
+                                        Дата создания: 11.03.22
+                                    </div>
+                                </div>
                             </div>
-                        </nav>
+                            <hr class="card-hr">
+                            <div class="card-body row">
+                                <div class="col-9 m-0 p-0">
+                                    <div class="card-body__info">
+                                        <small>Дата рождения:</small> 12.02.1998
+                                    </div>
+                                    <div class="card-body__info"> 
+                                        <small>Страховая программа:</small> Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА
+                                    </div>
+                                    <div class="card-body__info">
+                                        <small>Период действия ИК:</small> 15.05.2022 - 15.05.2022
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary" disabled>Скачать</button>
+                                    <button type="button" class="btn btn-primary" disabled>Перейти</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-12 mb-3">
+                            <div class="card-head row">
+                                <div class="col-9">
+                                    <div class="card-head__person">
+                                        <p class="card-head__person-name">
+                                            Сергеев Артем Андреевич
+                                        </p>
+                                        <p class="card-head__person-number">
+                                            74-459  0066241
+                                        </p>
+                                    </div>
+                                    <div class="card-head__tags d-flex">
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Гарантийное письмо
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Бумажная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Активная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Ожидает активации
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Электронная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Полис
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card-head__date text-end">
+                                        Дата создания: 11.03.22
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="card-hr">
+                            <div class="card-body row">
+                                <div class="col-9 m-0 p-0">
+                                    <div class="card-body__info">
+                                        <small>Дата рождения:</small> 12.02.1998
+                                    </div>
+                                    <div class="card-body__info"> 
+                                        <small>Страховая программа:</small> Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА
+                                    </div>
+                                    <div class="card-body__info">
+                                        <small>Период действия ИК:</small> 15.05.2022 - 15.05.2022
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary" disabled>Скачать</button>
+                                    <button type="button" class="btn btn-primary" disabled>Перейти</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-12 mb-3">
+                            <div class="card-head row">
+                                <div class="col-9">
+                                    <div class="card-head__person">
+                                        <p class="card-head__person-name">
+                                            Сергеев Артем Андреевич
+                                        </p>
+                                        <p class="card-head__person-number">
+                                            74-459  0066241
+                                        </p>
+                                    </div>
+                                    <div class="card-head__tags d-flex">
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Гарантийное письмо
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Бумажная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Активная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Ожидает активации
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Электронная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Полис
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card-head__date text-end">
+                                        Дата создания: 11.03.22
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="card-hr">
+                            <div class="card-body row">
+                                <div class="col-9 m-0 p-0">
+                                    <div class="card-body__info">
+                                        <small>Дата рождения:</small> 12.02.1998
+                                    </div>
+                                    <div class="card-body__info"> 
+                                        <small>Страховая программа:</small> Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА
+                                    </div>
+                                    <div class="card-body__info">
+                                        <small>Период действия ИК:</small> 15.05.2022 - 15.05.2022
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary" disabled>Скачать</button>
+                                    <button type="button" class="btn btn-primary" disabled>Перейти</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card col-12 mb-3">
+                            <div class="card-head row">
+                                <div class="col-9">
+                                    <div class="card-head__person">
+                                        <p class="card-head__person-name">
+                                            Сергеев Артем Андреевич
+                                        </p>
+                                        <p class="card-head__person-number">
+                                            74-459  0066241
+                                        </p>
+                                    </div>
+                                    <div class="card-head__tags d-flex">
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Гарантийное письмо
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Бумажная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Активная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Ожидает активации
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Электронная
+                                        </div>
+                                        <div class="card-head__tags-item card-head__tags-item_base">
+                                            Полис
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card-head__date text-end">
+                                        Дата создания: 11.03.22
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="card-hr">
+                            <div class="card-body row">
+                                <div class="col-9 m-0 p-0">
+                                    <div class="card-body__info">
+                                        <small>Дата рождения:</small> 12.02.1998
+                                    </div>
+                                    <div class="card-body__info"> 
+                                        <small>Страховая программа:</small> Аскомед 4 инф-ии+АБ "КЛЕЩЕВОЙ 22 ТИФ НОЧНОЙ АНДРОМЕДА
+                                    </div>
+                                    <div class="card-body__info">
+                                        <small>Период действия ИК:</small> 15.05.2022 - 15.05.2022
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-primary" disabled>Скачать</button>
+                                    <button type="button" class="btn btn-primary" disabled>Перейти</button>
+                                </div>
+                            </div>
+                        </div>
                     </main>
-        
+
+                    <footer class="footer d-flex justify-content-between align-items-center">
+                        
+                        <nav aria-label="">
+                            <ul class="pagination m-0">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">...</a></li>
+                              <li class="page-item"><a class="page-link" href="#">13</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </nav>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Показывать по 24
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                    </footer>
                 </div>
             </div>
-    
+
         </div>
+
     </div>
+    
 
-
-
-    <script src="https://kit.fontawesome.com/23c35b055d.js" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -33,101 +33,67 @@ p {
   margin: 0;
 }
 
-.container {
-  width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
+.page {
+  font-family: Roboto;
+  background-color: #F4F4F4;
+  margin: 16px 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 16px;
   background-color: #fff;
   padding: 18px 16px;
-  margin: 16px 0;
 }
 
-.header__title {
+.header-title {
   margin-right: auto;
 }
 
-.header__nav {
-  display: flex;
-}
-
-.header__nav-link {
-  margin-left: 48px;
-}
-
-.header__nav-icon {
-  margin-right: 8px;
-}
-
-.content-row {
-  display: grid;
-  grid-template-columns: 229px 1fr;
-  gap: 16px 16px;
-}
-
-.sidebar {
+.filter {
+  padding: 16px 16px;
   background-color: #fff;
   border-radius: 16px;
-  padding: 16px 16px;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px 0px;
+  padding: 0;
+  margin: 0;
 }
 
-.main-search {
+.top-bar {
   background-color: #fff;
   border-radius: 16px;
   padding: 12px 16px;
-}
-
-.cards-wrap {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px 16px;
 }
 
 .card {
   background-color: #fff;
   border-radius: 16px;
   padding: 16px 24px;
+  border: none;
 }
 
-.card-head__tags {
-  display: flex;
+.footer {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 14px 24px;
 }
 
-.card-head__tags-tag {
-  border-radius: 30px;
+.card-head__tags-item {
   color: #fff;
   padding: 2px 8px;
   font-size: 11px;
   letter-spacing: 0.4px;
   line-height: 16px;
-  text-align: center;
   margin-right: 8px;
-  font-weight: 500;
+  border-radius: 30px;
 }
 
-.card-head__tags-tag_immunocard {
-  background-color: #F6772D;
-}
-
-.card-date {
-  margin-left: auto;
-}
-
-.pagination-items {
-  list-style: none;
-  display: flex;
+.card-head__tags-item_base {
+  background-color: #0CAF89;
 }
 
 /* media  */
